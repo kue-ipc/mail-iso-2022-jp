@@ -3,9 +3,9 @@
 require 'mail'
 
 module Mail
-  class SubjectField < UnstructuredField
+  SubjectField.class_eval do
     include FieldWithIso2022JpEncoding
-    def b_value_encode(string)
+    define_method(:b_value_encode) do |string|
       encode64(string)
     end
   end

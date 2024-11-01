@@ -24,4 +24,5 @@ group :development, :test do
     gem "actionmailer", rails_version
   end
   gem "rdoc", ">= 3.12"
+  gem "net-smtp"
 end

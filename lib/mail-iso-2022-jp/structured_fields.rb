@@ -3,39 +3,13 @@
 require 'mail'
 
 module Mail
-  class FromField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
-
-  class SenderField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
-
-  class ToField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
-
-  class CcField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
-
-  class ReplyToField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
-
-  class ResentFromField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
-
-  class ResentSenderField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
-
-  class ResentToField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
-
-  class ResentCcField < StructuredField
-    include FieldWithIso2022JpEncoding
-  end
+  FromField.include FieldWithIso2022JpEncoding
+  SenderField.include FieldWithIso2022JpEncoding
+  ToField.include FieldWithIso2022JpEncoding
+  CcField.include FieldWithIso2022JpEncoding
+  ReplyToField.include FieldWithIso2022JpEncoding
+  ResentFromField.include FieldWithIso2022JpEncoding
+  ResentSenderField.include FieldWithIso2022JpEncoding
+  ResentToField.include FieldWithIso2022JpEncoding
+  ResentCcField.include FieldWithIso2022JpEncoding
 end
